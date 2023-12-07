@@ -1,0 +1,35 @@
+<section class="container mb-5">
+    <h2 class="text-center h1 text-warning fw-bold m-4">Listado de Agros</h2>
+    <div class="row bg-secondary-subtle p-4 rounded shadow-lg">
+        <div class="col-12 col-md-2">
+            <aside>
+                <div class="form-group">
+                    <p class="text-warning mb-0">Filtrar por Producto:</p>
+                    <select class="form-control col-8" placeholder="Filtrar por Producto" (change)="productFilter($event)">
+                        <option value="">Todos los Productos</option>
+                        <option value="{{product.id}}" *ngFor="let product of arrProducts">{{product.name}}</option>
+                    </select>
+                </div>
+                <button href="#" class="btn btn-warning text-white col-10 m-4" routerLink = "/newagro">Agregar nuevo Agro</button>
+            </aside>
+
+        </div>
+        <div class="col-12 col-md-10">
+            <div class="row align-items-stretch g-4">
+                <article class="col-6 col-md-4 text-center d-flex" *ngFor="let agro of arrAgros">
+                    <div class="card shadow-sm bg-warning-subtle">
+                        <img class="card-img-top" [src]="agro.picture" [alt]="agro.description">
+                        <div class="card-body">
+                            <h3 class="card-title text-warning">{{agro.name}}</h3>
+                            <div class="text-warning productsdiv">
+                                <ul class="list-unstyled"><li *ngFor="let products of productsByIdAgro[agro.id]">· {{products.name}}</li></ul>
+                            </div>
+                            <h4 class="text-warning">{{agro.prize}}€</h4>
+                            <button href="#" class="btn btn-warning text-white" [routerLink] = "['/agros', agro.id]">Ver Agro</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>

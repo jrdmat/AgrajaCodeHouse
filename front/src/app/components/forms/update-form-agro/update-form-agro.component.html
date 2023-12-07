@@ -1,0 +1,14 @@
+<div class="container my-3 bg-warning-subtle p-5 rounded-4">
+    <h2 class="text-center text-warning">Actualización del Agro</h2>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="row g-4">
+        <div class="form-group">
+            <input  class="form-control" type="text" placeholder="Nuevo nombre del Agro" formControlName="Name">
+            <p class="error" *ngIf="checkError('Name', 'required')">Debe añadir el nombre del Agro.</p>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" cols="40" rows="10" placeholder="Nueva descripción del Agro..." formControlName="Description"></textarea>
+            <p class="error" *ngIf="checkError('Description', 'required')">Debe añadir la descripción del Agro.</p>
+        </div>
+        <button class="btn btn-warning text-white col-2" type="submit" [disabled]="form.invalid">Editar Agro</button>
+    </form>
+</div>

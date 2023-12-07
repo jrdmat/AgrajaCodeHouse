@@ -1,0 +1,37 @@
+<div class="container my-3 bg-warning-subtle p-5 rounded-4">
+    <h2 class="text-center text-warning">Añadir Nuevo Agro</h2>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="row g-4 mt-2">
+        <div class="form-group">
+            <input  class="form-control" type="text" placeholder="Nombre del Agro" formControlName="name">
+            <p class="error" *ngIf="checkError('name', 'required')">Debe añadir el nombre del Agro.</p>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" cols="40" rows="5" placeholder="Descripción del Agro" formControlName="description"></textarea>
+            <p class="error" *ngIf="checkError('description', 'required')">Debe añadir la descripción del Agro.</p>    
+        </div>
+        <div class="form-group col-4">
+            <input  class="form-control" type="text" placeholder="Provincia" formControlName="province">
+            <p class="error" *ngIf="checkError('province', 'required')">Debe añadir la provincia del Agro.</p>
+        </div>
+        <div class="form-group col-4">
+            <input  class="form-control" type="number" placeholder="Precio" min="0" formControlName="prize">
+            <p class="error" *ngIf="checkError('prize', 'required')">Debe añadir el precio del Agro.</p>
+        </div>
+        <div class="form-group col-4">
+            <input  class="form-control" type="text" placeholder="Imagen" formControlName="picture">
+            <p class="error" *ngIf="checkError('picture', 'required')">Debe añadir la imagen del Agro.</p>
+            <small class="text-warning">Escribe el nombre de la imagen guardada en la carpeta img.</small>
+        </div>
+        <div class="font-weight-bold">
+            <p class="col-12">¿Con que tipos de cultivo trabaja el Agro?</p>
+            <div *ngFor="let product of arrProducts">
+                <label class="col-3" [for]="product.name">
+                    {{product.name}}
+                    <input type="checkbox" [id]="product.name" [formControlName]="product.name">
+                </label>
+
+            </div>
+        </div>
+        <button class="btn btn-warning text-white col-2" type="submit">Añadir Agro</button>
+    </form>
+</div>

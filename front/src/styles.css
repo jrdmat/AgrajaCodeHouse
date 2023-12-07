@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+.text-agraja1 {
+    color: #004255;
+  }
+  
+  .text-agraja2 {
+    color: #F5F5DC;
+  }
+
+  .text-agraja3 {
+    color: #FFB000;
+  }
+
+  .text-agraja4 {
+    color: #FFCF9D;
+  }
+
+  .bg-agraja1 {
+    background-color: #004255;
+  }
+
+  .bg-agraja2 {
+    background-color: #F5F5DC;
+  }
+
+  .bg-agraja3 {
+    background-color: #FFB000;
+  }
+
+  .bg-agraja4 {
+    background-color: #FFCF9D;
+  }
+
+  input.ng-invalid.ng-touched{
+    border-color:red;
+}
+
+.error{
+    color: red;
+}

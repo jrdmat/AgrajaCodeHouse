@@ -1,0 +1,30 @@
+<section class="container mb-5">
+    <h2 class="text-center h1 text-success fw-bold m-4">Listado de Cajas</h2>
+    <div class="row bg-secondary-subtle p-4 rounded shadow-lg">
+        <div class="col-12 col-md-2">
+            <aside>
+                <button href="#" class="btn btn-success col-10 m-4" (click)="sortByPrizeMaxToMin()">Ordenar por Precio: De mayor a menor</button>
+                <button href="#" class="btn btn-success col-10 m-4" (click)="sortByPrizeMinToMax()">Ordenar por Precio: De menor a mayor</button>
+                <button href="#" class="btn btn-success col-10 m-4" routerLink = "/newbox">Agregar nueva Caja</button>
+            </aside>
+
+        </div>
+        <div class="col-12 col-md-10">
+            <div class="row align-items-stretch g-4">
+                <article  class="col-6 col-md-4 text-center d-flex" *ngFor="let box of arrBoxes">
+                    <div class=" text-success card shadow-sm bg-success-subtle">
+                        <img class="card-img-top" [src]="box.picture" [alt]="box.description">
+                        <div class="card-body">
+                            <h3 class="card-title">{{box.name}}</h3>
+                            <div class="text-success productsdiv">
+                                <ul class="list-unstyled"><li class="" *ngFor="let products of productsByIdBox[box.id]">· {{products.name}}</li></ul>
+                            </div>
+                            <h4>{{box.prize}}€</h4>
+                            <button href="#" class="btn btn-success" [routerLink] = "['/boxes', box.id]">Ver Caja</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agraja_API", "Agraja\Agraja_API.csproj", "{D37A6F34-E628-4B1B-8351-D3657F9708A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Presentation", "1. Presentation", "{6EBF1DF4-085D-4203-8EA8-82F365B4738A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Application", "2. Application", "{93ECA99F-21BF-4723-9ACB-EBA97D8298B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Domain", "3. Domain", "{D96DE94B-6A4A-4401-B343-CFF37FF2AA06}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Infrastructure", "4. Infrastructure", "{FA7EC6C8-28A9-470A-ACD9-D2132C08A98F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Cross-cutting", "5. Cross-cutting", "{5E8CD510-B8E3-4F32-AE1C-F8E0354CE98F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agraja.Application", "Agraja.Application\Agraja.Application.csproj", "{75C2EC63-E1CE-4BA1-8A49-9930ABB8586A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agraja.Application.Contracts", "Agraja.Application.Contracts\Agraja.Application.Contracts.csproj", "{F4831FD8-858B-4611-BFA5-9BF93E640D69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agraja.Domain", "Agraja.Domain\Agraja.Domain.csproj", "{974FCC3E-C0D2-499B-943C-82B9612D75AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agraja.Infrastructure", "Agraja.Infrastructure\Agraja.Infrastructure.csproj", "{1D67AF02-620F-42BC-9DBA-F434AC8FDB18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agraja.Infrastructure.Contracts", "Agraja.Infrastructure.Contracts\Agraja.Infrastructure.Contracts.csproj", "{E57235F8-037A-4026-919F-7E13A953B239}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agraja.CrossCutting", "Agraja.CrossCutting\Agraja.CrossCutting.csproj", "{A7D7C413-EB45-46FA-8A13-EF3374429B60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agraja.CrossCutting.Contracts", "Agraja.CrossCutting.Contracts\Agraja.CrossCutting.Contracts.csproj", "{CDDA8288-2A38-41DB-BB29-B7E7E37AC352}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D37A6F34-E628-4B1B-8351-D3657F9708A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D37A6F34-E628-4B1B-8351-D3657F9708A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D37A6F34-E628-4B1B-8351-D3657F9708A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D37A6F34-E628-4B1B-8351-D3657F9708A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75C2EC63-E1CE-4BA1-8A49-9930ABB8586A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75C2EC63-E1CE-4BA1-8A49-9930ABB8586A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75C2EC63-E1CE-4BA1-8A49-9930ABB8586A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75C2EC63-E1CE-4BA1-8A49-9930ABB8586A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4831FD8-858B-4611-BFA5-9BF93E640D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4831FD8-858B-4611-BFA5-9BF93E640D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4831FD8-858B-4611-BFA5-9BF93E640D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4831FD8-858B-4611-BFA5-9BF93E640D69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{974FCC3E-C0D2-499B-943C-82B9612D75AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{974FCC3E-C0D2-499B-943C-82B9612D75AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{974FCC3E-C0D2-499B-943C-82B9612D75AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{974FCC3E-C0D2-499B-943C-82B9612D75AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D67AF02-620F-42BC-9DBA-F434AC8FDB18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D67AF02-620F-42BC-9DBA-F434AC8FDB18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D67AF02-620F-42BC-9DBA-F434AC8FDB18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D67AF02-620F-42BC-9DBA-F434AC8FDB18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E57235F8-037A-4026-919F-7E13A953B239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E57235F8-037A-4026-919F-7E13A953B239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E57235F8-037A-4026-919F-7E13A953B239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E57235F8-037A-4026-919F-7E13A953B239}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7D7C413-EB45-46FA-8A13-EF3374429B60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7D7C413-EB45-46FA-8A13-EF3374429B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7D7C413-EB45-46FA-8A13-EF3374429B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7D7C413-EB45-46FA-8A13-EF3374429B60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDDA8288-2A38-41DB-BB29-B7E7E37AC352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDDA8288-2A38-41DB-BB29-B7E7E37AC352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDDA8288-2A38-41DB-BB29-B7E7E37AC352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDDA8288-2A38-41DB-BB29-B7E7E37AC352}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D37A6F34-E628-4B1B-8351-D3657F9708A2} = {6EBF1DF4-085D-4203-8EA8-82F365B4738A}
+		{75C2EC63-E1CE-4BA1-8A49-9930ABB8586A} = {93ECA99F-21BF-4723-9ACB-EBA97D8298B5}
+		{F4831FD8-858B-4611-BFA5-9BF93E640D69} = {93ECA99F-21BF-4723-9ACB-EBA97D8298B5}
+		{974FCC3E-C0D2-499B-943C-82B9612D75AB} = {D96DE94B-6A4A-4401-B343-CFF37FF2AA06}
+		{1D67AF02-620F-42BC-9DBA-F434AC8FDB18} = {FA7EC6C8-28A9-470A-ACD9-D2132C08A98F}
+		{E57235F8-037A-4026-919F-7E13A953B239} = {FA7EC6C8-28A9-470A-ACD9-D2132C08A98F}
+		{A7D7C413-EB45-46FA-8A13-EF3374429B60} = {5E8CD510-B8E3-4F32-AE1C-F8E0354CE98F}
+		{CDDA8288-2A38-41DB-BB29-B7E7E37AC352} = {5E8CD510-B8E3-4F32-AE1C-F8E0354CE98F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1BA090FD-498B-4B11-9052-5FAAEF85D57A}
+	EndGlobalSection
+EndGlobal

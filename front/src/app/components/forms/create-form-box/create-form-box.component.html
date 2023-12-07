@@ -1,0 +1,41 @@
+<div class="container my-3 bg-success-subtle p-5 rounded-4">
+    <h2 class="text-center text-success">Añadir Nueva Caja</h2>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="row g-4 mt-2">
+        <div class="form-group">
+            <input  class="form-control" type="text" placeholder="Nombre de la Caja" formControlName="name">
+            <p class="error" *ngIf="checkError('name', 'required')">Debe añadir el nombre de la Caja.</p>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" cols="40" rows="5" placeholder="Descripción de la Caja" formControlName="description"></textarea>
+            <p class="error" *ngIf="checkError('description', 'required')">Debe añadir la descripción de la Caja.</p>   
+        </div>
+        <div class="form-group col-3">
+            <input  class="form-control" type="number" placeholder="Peso" formControlName="kg">
+            <p class="error" *ngIf="checkError('kg', 'required')">Debe añadir el peso de la Caja.</p>
+        </div>
+        <div class="form-group col-3">
+            <input  class="form-control" type="number" placeholder="Precio" min="0" formControlName="prize">
+            <p class="error" *ngIf="checkError('prize', 'required')">Debe añadir el precio de la Caja.</p>
+        </div>
+        <div class="form-group col-3">
+            <input  class="form-control" type="number" placeholder="Stock" min="0" formControlName="stock">
+            <p class="error" *ngIf="checkError('stock', 'required')">Debe añadir el stock de la Caja.</p>
+        </div>
+        <div class="form-group col-3">
+            <input  class="form-control" type="text" placeholder="Imagen" formControlName="picture">
+            <p class="error" *ngIf="checkError('picture', 'required')">Debe añadir la imagen de la Caja.</p>
+            <small class="text-success">Escribe el nombre de la imagen guardada en la carpeta img.</small>
+        </div>
+        <div class="font-weight-bold">
+            <p class="col-12">¿Que tipos de cultivo contiene la Caja?</p>
+            <div *ngFor="let product of arrProducts">
+                <label class="col-3" [for]="product.name">
+                    {{product.name}}
+                    <input type="checkbox" [id]="product.name" value="product.id" [formControlName]="product.name">
+                </label>
+
+            </div>
+        </div>
+        <button class="btn btn-success text-white col-2" type="submit">Añadir Caja</button>
+    </form>
+</div>

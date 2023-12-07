@@ -1,0 +1,364 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Application\\Agraja.Application.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Application.Contracts\\Agraja.Application.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Application.Contracts\\Agraja.Application.Contracts.csproj",
+        "projectName": "Agraja.Application.Contracts",
+        "projectPath": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Application.Contracts\\Agraja.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Jordi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Application.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jordi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Domain\\Agraja.Domain.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Domain\\Agraja.Domain.csproj"
+              },
+              "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Infrastructure.Contracts\\Agraja.Infrastructure.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Infrastructure.Contracts\\Agraja.Infrastructure.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Application\\Agraja.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Application\\Agraja.Application.csproj",
+        "projectName": "Agraja.Application",
+        "projectPath": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Application\\Agraja.Application.csproj",
+        "packagesPath": "C:\\Users\\Jordi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jordi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Application.Contracts\\Agraja.Application.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Application.Contracts\\Agraja.Application.Contracts.csproj"
+              },
+              "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.CrossCutting.Contracts\\Agraja.CrossCutting.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.CrossCutting.Contracts\\Agraja.CrossCutting.Contracts.csproj"
+              },
+              "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Infrastructure.Contracts\\Agraja.Infrastructure.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Infrastructure.Contracts\\Agraja.Infrastructure.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.CrossCutting.Contracts\\Agraja.CrossCutting.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.CrossCutting.Contracts\\Agraja.CrossCutting.Contracts.csproj",
+        "projectName": "Agraja.CrossCutting.Contracts",
+        "projectPath": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.CrossCutting.Contracts\\Agraja.CrossCutting.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Jordi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.CrossCutting.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jordi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Domain\\Agraja.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Domain\\Agraja.Domain.csproj",
+        "projectName": "Agraja.Domain",
+        "projectPath": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Domain\\Agraja.Domain.csproj",
+        "packagesPath": "C:\\Users\\Jordi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jordi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Infrastructure.Contracts\\Agraja.Infrastructure.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Infrastructure.Contracts\\Agraja.Infrastructure.Contracts.csproj",
+        "projectName": "Agraja.Infrastructure.Contracts",
+        "projectPath": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Infrastructure.Contracts\\Agraja.Infrastructure.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Jordi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Infrastructure.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jordi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Domain\\Agraja.Domain.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\OneDrive\\Escritorio\\Agraja\\Agraja\\Agraja.Domain\\Agraja.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

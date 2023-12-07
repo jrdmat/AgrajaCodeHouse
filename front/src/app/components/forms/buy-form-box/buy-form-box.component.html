@@ -1,0 +1,35 @@
+<div class="container my-3 bg-success-subtle p-5 rounded-4">
+    <h2 class="text-center text-success">Comprar {{box.name}}</h2>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="row g-4 mt-2">
+        <div class="form-group col-6 col-md-4">
+            <input  class="form-control" type="text" placeholder="Teléfono" formControlName="phone">
+            <p class="error" *ngIf="checkError('phone', 'required')">Debe añadir su número teléfono.</p>
+        </div>
+        <div class="form-group col-6 col-md-4">
+            <input class="form-control" type="text" placeholder="Provincia" formControlName="provinze">
+            <p class="error" *ngIf="checkError('provinze', 'required')">Debe añadir su provincia.</p>
+        </div>
+        <div class="form-group col-6 col-md-4">
+            <input  class="form-control" type="text" placeholder="Población" formControlName="poblation">
+            <p class="error" *ngIf="checkError('poblation', 'required')">Debe añadir su población.</p>
+        </div>
+        <div class="form-group col-6 col-md-4">
+            <input  class="form-control" type="text" placeholder="Código Postal" formControlName="postalCode">
+            <p class="error" *ngIf="checkError('postalCode', 'required')">Debe añadir su Código Postal.</p>
+        </div>
+        <div class="form-group col-6 col-md-4">
+            <input  class="form-control" type="text" placeholder="Direccón" formControlName="direction">
+            <p class="error" *ngIf="checkError('direction', 'required')">Debe añadir su dirección.</p>
+        </div>
+        <div class="form-group col-6 col-md-4 ">
+            <select class="form-control" placeholder="Selecciona la forma de pago" formControlName="paymentType">
+                <option class="text-secondary" value="">Selecciona la forma de pago</option>
+                <option value="{{paymentType.id}}" *ngFor="let paymentType of arrPaymentTypes">{{paymentType.name}}</option>
+            </select>
+            <p class="error" *ngIf="checkError('paymentType', 'required')">Debe seleccionar el método de pago.</p>
+        </div>
+        <div class="w-100 form-group"></div>
+        <button class="btn btn-primary col-2" type="submit" [disabled]="form.invalid">Comprar Caja</button>
+
+    </form>
+</div>
